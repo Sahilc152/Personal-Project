@@ -58,7 +58,7 @@ public class HelloWorldModel {
                 .map(Page::getPath).orElse("");
 
         message = "Hello World!\n"
-            + "Resource type : " + resourceType + "\n"
+            + "Resource type is: " + resourceType + "\n"
             + "Current page is:  " + currentPagePath + "\n"
             + "This is instance: " + settings.getSlingId() + "\n";
     }
