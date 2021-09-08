@@ -4,6 +4,6 @@ public interface HomeBanner {
     String getBio();
     String getFullName();
     String getIntro();
-    String getMyButton();
-    String getHeroImage();
+    String getButton();
+    String getImage();
 }

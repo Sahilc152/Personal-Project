@@ -4,6 +4,6 @@ public interface HomeAbout {
     String getAbout();
     String getDetails();
     String getIntro();
-    String getMyButton();
-    String getAboutImage();
+    String getButton();
+    String getImage();
 }

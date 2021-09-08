@@ -1,0 +1,16 @@
+			<sly data-sly-use.factarea="com.personalproject.core.models.FactArea"></sly>
+            <!-- Start fact Area -->
+			<section class="facts-area section-gap" id="facts-area">
+				<div class="container">				
+					<div class="row" data-sly-list="${factarea.factDetailsWithMap}">
+						<div class="col-lg-3 col-md-6 single-fact">
+                                <h1 class="counter">${item.factnumber}</h1>
+								<p>${item.factlabel}</p>
+
+                                <!--<h1 class="counter">2536</h1>
+								<p>Projects Completed</p>-->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end fact Area -->

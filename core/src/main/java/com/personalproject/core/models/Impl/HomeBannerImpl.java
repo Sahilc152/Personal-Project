@@ -2,7 +2,6 @@ package com.personalproject.core.models.Impl;
 
 import com.personalproject.core.models.HomeBanner;
 import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
@@ -11,27 +10,23 @@ import org.slf4j.LoggerFactory;
 
 @Model(adaptables = SlingHttpServletRequest.class,
         adapters = HomeBanner.class,
-        resourceType = HomeBannerImpl.RESOURCE_TYPE,
+        //resourceType = HomeBannerImpl.RESOURCE_TYPE,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
 public class HomeBannerImpl implements HomeBanner {
     private static final Logger LOG = LoggerFactory.getLogger(HomeBannerImpl.class);
-    final protected static String RESOURCE_TYPE="personalproject/components/content/homebanner";
+    //final protected static String RESOURCE_TYPE="personalproject/components/content/homebanner";
 
     @ValueMapValue
-    @Default(values = "THIS IS ME")
     private String bio;
 
     @ValueMapValue
-    @Default(values = "PHILIP GILBERT")
     private String fullname;
 
     @ValueMapValue
-    @Default(values = "You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.")
     private String intro;
 
     @ValueMapValue
-    @Default(values = "DISCOVER NOW")
     private String mybutton;
 
     @ValueMapValue
@@ -53,12 +48,12 @@ public class HomeBannerImpl implements HomeBanner {
     }
 
     @Override
-    public String getMyButton() {
+    public String getButton() {
         return mybutton;
     }
 
     @Override
-    public String getHeroImage() {
+    public String getImage() {
         return img;
     }
 }
