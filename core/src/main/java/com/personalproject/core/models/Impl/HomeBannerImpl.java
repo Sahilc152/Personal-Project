@@ -30,6 +30,9 @@ public class HomeBannerImpl implements HomeBanner {
     private String mybutton;
 
     @ValueMapValue
+    private String path;
+
+    @ValueMapValue
     private String img;
 
     @Override
@@ -48,12 +51,17 @@ public class HomeBannerImpl implements HomeBanner {
     }
 
     @Override
-    public String getButton() {
+    public String getMyButton() {
         return mybutton;
     }
 
     @Override
-    public String getImage() {
+    public String getPath() {
+        return path;
+    }
+
+    @Override
+    public String getHeroImage() {
         return img;
     }
 }

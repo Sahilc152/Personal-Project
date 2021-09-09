@@ -21,6 +21,33 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                         fieldLabel="Description"
                         name="./info"/>
+                    <sectiongap
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        checked="{Boolean}false"
+                        fieldDescription="When checked, section gap is added."
+                        name="./sectiongap"
+                        text="Section Gap"
+                        uncheckedValue="{Boolean}false"
+                        value="{Boolean}true"/>
+                    <paddingbottom
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        checked="{Boolean}false"
+                        fieldDescription="When checked, bottom padding is added."
+                        name="./paddingbottom"
+                        text="Padding Bottom"
+                        uncheckedValue="{Boolean}false"
+                        value="{Boolean}true"/>
+                    <testimonialstyling
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        checked="{Boolean}false"
+                        fieldDescription="When checked, testimonial styling is added."
+                        name="./testimonialstyling"
+                        text="Testimonial Styling"
+                        uncheckedValue="{Boolean}false"
+                        value="{Boolean}true"/>
                 </items>
             </column>
         </items>

@@ -1,0 +1,22 @@
+		<sly data-sly-use.testimonial="com.personalproject.core.models.Testimonial"></sly>
+            <!-- Start testimonial Area -->
+		    <section class="testimonial-area section-gap">
+		        <div class="container">
+		            <div class="row">
+		                <div class="active-testimonial" data-sly-list.items="${testimonial.testimonialDetails}">
+		                    <div class="single-testimonial item d-flex flex-row">
+		                        <div class="desc">
+                                	<p>${items.description}</p>
+		                            <h4>${items.title}</h4>
+		                            <p>${items.heading}</p>
+		                            <!--<p>
+		                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
+		                            </p>
+		                            <h4>Harriet Maxwell</h4>
+		                            <p>CEO at Google</p>-->
+		                        </div>
+		                    </div>
+						</div>
+					</div>
+				</div>
+			</section>
