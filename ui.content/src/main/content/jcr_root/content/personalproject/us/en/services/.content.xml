@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-09-15T17:15:56.063+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/personalproject/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Services"
+        sling:resourceType="personalproject/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="personalproject/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="personalproject/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="personalproject/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="personalproject/components/container"
+                    layout="responsiveGrid">
+                    <menunav
+                        jcr:created="{Date}2021-09-14T13:25:34.181+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-09-15T12:26:28.370+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/content/menunav"
+                        heading="Services"
+                        path="/content/personalproject/us/en/home"
+                        path1="/content/personalproject/us/en/home"
+                        path2="/content/personalproject/us/en/services"
+                        title="Home"
+                        title1="Home"
+                        title2="Services"/>
+                    <experiencefragment
+                        jcr:created="{Date}2021-09-15T17:14:14.968+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-09-15T17:14:14.968+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/services-fragment/master"/>
+                    <factarea
+                        jcr:created="{Date}2021-09-14T13:32:13.540+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-09-14T13:33:23.053+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/content/factarea">
+                        <factdetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                factlabel="Projects Completed"
+                                factnumber="2536"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                factlabel="Happy Clients"
+                                factnumber="6784"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                factlabel="Cups of Coffee"
+                                factnumber="2239"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                factlabel="Real Professionals"
+                                factnumber="435"/>
+                        </factdetailswithmap>
+                    </factarea>
+                    <experiencefragment_404060516
+                        jcr:created="{Date}2021-09-15T17:15:23.183+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-09-15T17:15:23.183+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/price-fragment/master"/>
+                    <experiencefragment_1776667037
+                        jcr:created="{Date}2021-09-15T17:15:56.047+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-09-15T17:15:56.047+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/testimonial-fragment/master"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

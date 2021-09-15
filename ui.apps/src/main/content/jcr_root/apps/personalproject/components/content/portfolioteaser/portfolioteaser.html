@@ -1,27 +1,29 @@
-	<sly data-sly-use.portfolioteaser="com.personalproject.core.models.PortfolioTeaser"></sly>
-        <!-- Start portfolio-area Area -->
-            <section class="portfolio-area" id="portfolio">
-                <div class="container">
-                    <div class="filters-content">
-                        <div class="row grid">
-                            <div class="single-portfolio all vector">
-                            	<div class="relative">
-	                            	<div class="thumb">
-	                            		<div class="overlay overlay-bg"></div>
-	                            			<img class="image img-fluid" src="${portfolioteaser.image}" alt="">
-	                            		</div>
-										<a href="${portfolioteaser.image}" class="img-pop-up">	
-									  	<div class="middle">
-									    	<div class="text align-self-center d-flex"><img src="/content/dam/personalproject/preview.png" alt=""></div>
-									  	</div>
-										</a>                              		
-                            		</div>
-									<div class="p-inner">
-								    	<h4>${portfolioteaser.title}</h4>
-										<div class="cat">${portfolioteaser.type}</div>
-									</div>					                               
-                            	</div>
-							</div>
+<sly data-sly-use.portfolioteaser="com.personalproject.core.models.PortfolioTeaser"></sly>
+<!-- Start portfolio-area Area -->
+<section class="portfolio-area pb-120" id="portfolio">
+	<div class="container">
+    	<div class="filters-content">
+        	<div class="row grid">
+            	<div class="single-portfolio col all vector">
+                	<div class="relative">
+	                	<div class="thumb">
+	                    	<div class="overlay overlay-bg"></div>
+	                        <img class="image img-fluid" src="${portfolioteaser.image}" alt="">
 						</div>
+						<a href="${portfolioteaser.image}" class="img-pop-up">	
+							<div class="middle">
+								<div class="text align-self-center d-flex">
+                                	<img src="/content/dam/personalproject/preview.png" alt="">
+								</div>
+							</div>
+						</a>                              		
 					</div>
-				</section>
+					<div class="p-inner">
+						<h4>${portfolioteaser.title}</h4>
+						<div class="cat">${portfolioteaser.type}</div>
+					</div>					                               
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

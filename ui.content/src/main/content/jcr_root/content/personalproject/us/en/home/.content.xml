@@ -2,10 +2,13 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-09-09T18:38:40.017+05:30"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-09-15T17:10:33.635+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/personalproject/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
+        jcr:title="Home"
         sling:resourceType="personalproject/components/page">
         <root
             jcr:primaryType="nt:unstructured"
@@ -15,11 +18,6 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="personalproject/components/container"
                 layout="responsiveGrid">
-                <title
-                    jcr:lastModified="{Date}2021-09-09T16:16:26.163+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="personalproject/components/title"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="personalproject/components/container"
@@ -50,114 +48,14 @@
                         intro="Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
                         mybutton="View full details"
                         path="/content/personalproject/us/en/about"/>
-                    <titletext
-                        jcr:created="{Date}2021-09-07T12:04:18.600+05:30"
+                    <experiencefragment
+                        jcr:created="{Date}2021-09-15T17:05:55.956+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T16:55:15.817+05:30"
+                        jcr:lastModified="{Date}2021-09-15T17:05:55.956+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/titletext"
-                        info="At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected."
-                        paddingbottom="false"
-                        sectiongap="true"
-                        title="My Offered Services"/>
-                    <services
-                        jcr:created="{Date}2021-09-07T12:12:48.696+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-08T17:23:45.398+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/services"
-                        description="&quot;It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.&quot;"
-                        title="Web Design">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </services>
-                    <services_202071740
-                        jcr:created="{Date}2021-09-09T16:56:35.244+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T16:57:17.552+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/services"
-                        description="If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions."
-                        title="Web Development">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </services_202071740>
-                    <services_1645664168
-                        jcr:created="{Date}2021-09-09T16:56:38.796+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T16:57:35.985+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/services"
-                        description="Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills."
-                        title="Photography">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </services_1645664168>
-                    <services_532606405
-                        jcr:created="{Date}2021-09-09T16:59:50.569+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T17:00:31.155+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/services"
-                        description="Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument."
-                        title="Clipping Path">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </services_532606405>
-                    <services_1656537331
-                        jcr:created="{Date}2021-09-09T16:59:59.171+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T17:00:51.457+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/services"
-                        description="Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts."
-                        title="Apps Interface">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                behavior="none"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </services_1656537331>
-                    <services_367995153
-                        jcr:created="{Date}2021-09-09T17:00:04.402+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T17:01:18.780+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/services"
-                        description="You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that."
-                        title="Graphic Design">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </services_367995153>
+                        sling:resourceType="personalproject/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/services-fragment/master"/>
                     <factarea
                         jcr:created="{Date}2021-09-08T11:55:15.029+05:30"
                         jcr:createdBy="admin"
@@ -184,180 +82,30 @@
                                 factnumber="435"/>
                         </factdetailswithmap>
                     </factarea>
-                    <titletext_106072478
-                        jcr:created="{Date}2021-09-09T12:39:07.072+05:30"
+                    <experiencefragment_1485333292
+                        jcr:created="{Date}2021-09-15T17:07:53.746+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T12:44:47.603+05:30"
+                        jcr:lastModified="{Date}2021-09-15T17:07:53.746+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/titletext"
-                        info="Who are in extremely love with eco friendly system."
-                        paddingbottom="true"
-                        sectiongap="true"
-                        title="Our Latest Featured Projects"/>
-                    <portfolioteaser
-                        jcr:created="{Date}2021-09-08T18:09:48.398+05:30"
+                        sling:resourceType="personalproject/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/portfolio-fragment/master"/>
+                    <experiencefragment_1643914371
+                        jcr:created="{Date}2021-09-15T17:10:06.367+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-08T18:10:24.963+05:30"
+                        jcr:lastModified="{Date}2021-09-15T17:10:06.367+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/portfolioteaser"
-                        img="/content/dam/personalproject/p1.jpg"
-                        title="2D Vinyl Design"
-                        type="vector">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </portfolioteaser>
-                    <portfolioteaser_1253582423
-                        jcr:created="{Date}2021-09-09T17:19:17.293+05:30"
+                        sling:resourceType="personalproject/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/testimonial-fragment/master"/>
+                    <experiencefragment_119030662
+                        jcr:created="{Date}2021-09-15T17:10:11.280+05:30"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T17:20:01.375+05:30"
+                        jcr:lastModified="{Date}2021-09-15T17:10:11.280+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/portfolioteaser"
-                        img="/content/dam/personalproject/p2.jpg"
-                        title="2D Vinyl Design"
-                        type="vector">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </portfolioteaser_1253582423>
-                    <portfolioteaser_236321050
-                        jcr:created="{Date}2021-09-09T17:19:24.927+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T17:20:44.027+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/portfolioteaser"
-                        img="/content/dam/personalproject/p6.jpg"
-                        title="2D Vinyl Design"
-                        type="raster">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </portfolioteaser_236321050>
-                    <titletext_1221861418
-                        jcr:created="{Date}2021-09-09T12:39:16.020+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T18:38:39.965+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/titletext"
-                        info="It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person."
-                        paddingbottom="false"
-                        sectiongap="true"
-                        testimonialstyling="true"
-                        title="Client’s Feedback About Me"/>
-                    <testimonial
-                        jcr:created="{Date}2021-09-08T16:38:28.808+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-08T17:04:43.780+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/testimonial">
-                        <testimonialdetailswithmap jcr:primaryType="nt:unstructured">
-                            <item0
-                                jcr:primaryType="nt:unstructured"
-                                description="Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you."
-                                heading="CEO at Google"
-                                title="Harriet Maxwell"/>
-                            <item1
-                                jcr:primaryType="nt:unstructured"
-                                description="&#xd;&#xa;A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However."
-                                heading="CEO at Facebook"
-                                title="Carolyn Craig"/>
-                        </testimonialdetailswithmap>
-                    </testimonial>
-                    <price
-                        jcr:created="{Date}2021-09-08T18:35:29.368+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-08T18:42:58.263+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/price"
-                        heading="For the individuals"
-                        number="01"
-                        tag1="Secure Online Transfer"
-                        tag2="Unlimited Styles for interface"
-                        tag3="Reliable Customer Service"
-                        title="Economy">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="3"/>
-                        </cq:responsive>
-                    </price>
-                    <price_1715073320
-                        jcr:created="{Date}2021-09-09T17:52:28.298+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T17:53:49.013+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/price"
-                        heading="For the individuals"
-                        number="02"
-                        tag1="Secure Online Transfer"
-                        tag2="Unlimited Styles for interface"
-                        tag3="Reliable Customer Service"
-                        title="Business">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="3"/>
-                        </cq:responsive>
-                    </price_1715073320>
-                    <price_603338541
-                        jcr:created="{Date}2021-09-09T17:52:36.470+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T17:54:53.499+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/price"
-                        heading="For the individuals"
-                        number="03"
-                        tag1="Secure Online Transfer"
-                        tag2="Unlimited Styles for interface"
-                        tag3="Reliable Customer Service"
-                        title="Premium">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="3"/>
-                        </cq:responsive>
-                    </price_603338541>
-                    <price_451723112
-                        jcr:created="{Date}2021-09-09T17:52:44.947+05:30"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-09T17:56:35.383+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="personalproject/components/content/price"
-                        heading="For the individuals"
-                        number="04"
-                        tag1="Secure Online Transfer"
-                        tag2="Unlimited Styles for interface"
-                        tag3="Reliable Customer Service"
-                        title="Exclusive">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="3"/>
-                        </cq:responsive>
-                    </price_451723112>
+                        sling:resourceType="personalproject/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/personalproject/us/en/site/price-fragment/master"/>
                     <blogteaser
                         jcr:created="{Date}2021-09-08T17:41:53.432+05:30"
                         jcr:createdBy="admin"
@@ -409,6 +157,20 @@
                                 width="4"/>
                         </cq:responsive>
                     </blogteaser_371659876>
+                    <brands
+                        jcr:created="{Date}2021-09-13T22:45:35.127+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-09-14T17:49:18.836+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/content/brands"
+                        path="[/content/dam/personalproject/l1.png,/content/dam/personalproject/l2.png,/content/dam/personalproject/l3.png,/content/dam/personalproject/l4.png,/content/dam/personalproject/l5.png]">
+                        <brandlogowithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                path="/content/dam/personalproject/l1.png"/>
+                        </brandlogowithmap>
+                    </brands>
                 </container>
             </container>
         </root>

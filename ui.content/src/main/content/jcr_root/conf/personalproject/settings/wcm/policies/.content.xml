@@ -34,9 +34,9 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
@@ -303,6 +303,18 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_7935082268000
+                    jcr:description="This is Custom Component Policy for My Custom Template"
+                    jcr:lastModified="{Date}2021-09-15T13:59:42.381+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Custom Component Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    columns="16"
+                    components="[/apps/personalproject/components/content/blogteaser,/apps/personalproject/components/content/brands,/apps/personalproject/components/content/factarea,/apps/personalproject/components/content/homeabout,/apps/personalproject/components/content/homebannerarea,/apps/personalproject/components/content/menunav,/apps/personalproject/components/content/portfolioteaser,/apps/personalproject/components/content/price,/apps/personalproject/components/content/services,/apps/personalproject/components/content/testimonial,/apps/personalproject/components/content/titletext]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_7935082268000>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -341,4 +353,76 @@
             </page>
         </components>
     </personalproject>
+    <core jcr:primaryType="nt:unstructured">
+        <wcm jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <page jcr:primaryType="nt:unstructured">
+                    <v2 jcr:primaryType="nt:unstructured">
+                        <page jcr:primaryType="nt:unstructured">
+                            <policy_1631531017001
+                                jcr:description="This is Custom Page Policy for My Custom Template in Personal Project."
+                                jcr:lastModified="{Date}2021-09-13T16:37:06.873+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Custom Page Policy"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                clientlibs="[personalproject.dependencies,personalproject.site]"
+                                clientlibsJsHead="personalproject.dependencies">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </policy_1631531017001>
+                            <policy_7693212765000
+                                jcr:lastModified="{Date}2021-09-14T19:09:07.049+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Custom Policy Page"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                clientlibs="[personalproject.dependencies,personalproject.site]"
+                                clientlibsJsHead="personalproject.dependencies">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </policy_7693212765000>
+                        </page>
+                    </v2>
+                </page>
+                <container jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <container jcr:primaryType="nt:unstructured">
+                            <policy_1631531255366
+                                jcr:description="This is Custom Component Policy for My Custom Template in Personal Project."
+                                jcr:lastModified="{Date}2021-09-13T17:11:02.874+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Custom Component Policy"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                components="[/apps/personalproject/components/content/blogteaser,/apps/personalproject/components/content/factarea,/apps/personalproject/components/content/homeabout,/apps/personalproject/components/content/homebannerarea,/apps/personalproject/components/content/portfolioteaser,/apps/personalproject/components/content/price,/apps/personalproject/components/content/services,/apps/personalproject/components/content/testimonial,/apps/personalproject/components/content/titletext]"
+                                layoutDisabled="false">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <cq:authoring jcr:primaryType="nt:unstructured">
+                                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                                        <mapping_1575030255082
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="media"
+                                            assetMimetype="image/*"
+                                            droptarget="image"
+                                            resourceType="personalproject/components/image"/>
+                                        <mapping_1575030260142
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="content"
+                                            assetMimetype="text/html"
+                                            droptarget="experiencefragment"
+                                            resourceType="personalproject/components/experiencefragment"/>
+                                        <mapping_1575030269139
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="media"
+                                            assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
+                                            droptarget="contentfragment"
+                                            resourceType="personalproject/components/contentfragment"/>
+                                    </assetToComponentMapping>
+                                </cq:authoring>
+                            </policy_1631531255366>
+                        </container>
+                    </v1>
+                </container>
+            </components>
+        </wcm>
+    </core>
 </jcr:root>
