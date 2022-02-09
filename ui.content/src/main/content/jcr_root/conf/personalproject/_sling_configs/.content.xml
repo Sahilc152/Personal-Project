@@ -18,4 +18,10 @@
         jcr:primaryType="nt:unstructured"
         clientId="28b07c6be4d544f188dc2f36e33b196b"
         reportSuiteId=""/>
+    <com.personalproject.core.config.PersonalCAConfig
+        jcr:primaryType="nt:unstructured"
+        siteAdmin="Personal Project"
+        siteCountry="United States"
+        siteLocale="English"
+        siteSection="Site Section"/>
 </jcr:root>
