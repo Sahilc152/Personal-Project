@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2022-01-18T17:32:17.722+05:30"
+
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2021-12-24T18:38:32.169+05:30"
+        cq:lastReplicatedBy="workflow-process-service"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/personalproject/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Workflow"
+        jcr:uuid="68e4d4fa-cdd4-44c0-893b-a56face25fd7"
+        sling:resourceType="personalproject/components/page"
+        Approver1="sahilchhabria"
+        Approver2="testuser">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="personalproject/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2021-09-14T18:28:41.720+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="personalproject/components/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:lastModified="{Date}2021-12-08T16:34:13.202+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="personalproject/components/container"
+                    layout="responsiveGrid">
+                    <titletext
+                        jcr:created="{Date}2021-12-20T22:33:09.231+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-20T22:36:11.072+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/content/titletext"
+                        info="Heena is a very good teacher"
+                        paddingbottom="false"
+                        sectiongap="true"
+                        testimonialstyling="false"
+                        title="Sahil Chhabria"/>
+                    <titletext_1581836192
+                        jcr:created="{Date}2021-12-24T17:48:15.522+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-24T17:51:08.582+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="personalproject/components/content/titletext"
+                        info="Workflow setup for 2nd task"
+                        paddingbottom="false"
+                        sectiongap="true"
+                        testimonialstyling="false"
+                        title="Heena Bhavani"/>
+                </container>
+            </container>
+        </root>
+
+        <cq:BlueprintSyncConfig
+            cq:rolloutConfigs="[/apps/msm/personal-project-blueprint/rolloutconfigs/customconfig]"
+            jcr:primaryType="cq:BlueprintSyncConfig"/>
+
+    </jcr:content>
+</jcr:root>

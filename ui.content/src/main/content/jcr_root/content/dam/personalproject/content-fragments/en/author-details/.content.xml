@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="481d0a4b-b231-4ab3-b7e7-be8cb0c8f293">
+    <jcr:content
+        cq:name="author-details"
+        cq:parentPath="/content/dam/personalproject/content-fragments/en"
+        jcr:description=""
+        jcr:lastModified="{Date}2022-01-28T17:46:24.293+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Author Details"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-01-28T17:46:24.293+05:30">
+        <data
+            cq:model="/conf/personalproject/settings/dam/cfm/models/personal-project-cf-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                authorbio="&lt;p>J.&amp;nbsp;K. Rowling, is a British author, philanthropist, film producer, and screenwriter. She is the author of the&amp;nbsp;&lt;i>&lt;a title=&quot;https://en.wikipedia.org/wiki/harry_potter&quot; href=&quot;https://en.wikipedia.org/wiki/Harry_Potter&quot;>Harry Potter&lt;/a>&lt;/i>&amp;nbsp;series, which has won multiple awards and sold more than 500&amp;nbsp;million copies as of 2018, and became the&amp;nbsp;&lt;a title=&quot;https://en.wikipedia.org/wiki/list_of_best-selling_books&quot; href=&quot;https://en.wikipedia.org/wiki/List_of_best-selling_books&quot;>best-selling book children's series in history&lt;/a>&amp;nbsp;in 2008.&amp;nbsp;The books are the basis of a&amp;nbsp;&lt;a title=&quot;https://en.wikipedia.org/wiki/harry_potter_(film_series)&quot; href=&quot;https://en.wikipedia.org/wiki/Harry_Potter_(film_series)&quot;>popular film series&lt;/a>. She also writes&amp;nbsp;&lt;a title=&quot;https://en.wikipedia.org/wiki/crime_fiction&quot; href=&quot;https://en.wikipedia.org/wiki/Crime_fiction&quot;>crime fiction&lt;/a>&amp;nbsp;under the pen name&amp;nbsp;Robert Galbraith.&lt;/p>&#xa;"
+                authorbio_x0040_ContentType="text/html"
+                authorbio_x0040_LastModified="{Date}2022-01-28T17:43:03.869+05:30"
+                authorname="J. K. Rowling"
+                authorname_x0040_LastModified="{Date}2022-01-28T17:43:03.851+05:30"
+                books="[The Casual Vacancy,Harry Potter]"
+                books_x0040_LastModified="{Date}2022-01-28T17:43:03.854+05:30"
+                isauthor="{Boolean}true"
+                isauthor_x0040_LastModified="{Date}2022-01-28T17:43:03.865+05:30"
+                profession="Author"
+                profession_x0040_LastModified="{Date}2022-01-28T17:43:03.862+05:30"
+                publishdate="{Date}2022-02-15T17:42:00.000+05:30"
+                publishdate_x0040_LastModified="{Date}2022-01-28T17:43:03.858+05:30"/>
+            <new_author
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                authorbio="&lt;p>TECHNICAL TRAINING / CERTIFICATIONS&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Completed Java Programming Masterclass covering Java 11 &amp;amp; Java 17 for AEM on Udemy 2021 &lt;/li>&#xa;&lt;li>Trained and Certified for Android developer using Android Studio and Firebase 2020&lt;/li>&#xa;&lt;li>Successfully completed 1-month course on MySQL Database with PL/SQL 2019&lt;/li>&#xa;&lt;li>Core and Advanced Java Training of 1-month with certification preparation for OCJA 12 and OCJP 12 2019&lt;/li>&#xa;&lt;li>Certified Python developer with Data Science 2019&lt;/li>&#xa;&lt;/ul>&#xa;"
+                authorbio_x0040_ContentType="text/html"
+                authorbio_x0040_LastModified="{Date}2022-01-28T17:46:24.144+05:30"
+                authorname="Sahil Chhabria"
+                authorname_x0040_LastModified="{Date}2022-01-28T17:46:24.129+05:30"
+                books="[Java,AEM]"
+                books_x0040_LastModified="{Date}2022-01-28T17:46:24.132+05:30"
+                isauthor="{Boolean}true"
+                isauthor_x0040_LastModified="{Date}2022-01-28T17:46:24.141+05:30"
+                profession="Both"
+                profession_x0040_LastModified="{Date}2022-01-28T17:46:24.139+05:30"
+                publishdate="{Date}2022-02-08T17:42:00.000+05:30"
+                publishdate_x0040_LastModified="{Date}2022-01-28T17:46:24.136+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <new_author
+                    jcr:description=""
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="New Author"
+                    name="new_author">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[authorname:e5f6b810-8228-431f-86c0-364af872fe9d,books:e5f6b810-8228-431f-86c0-364af872fe9d,publishdate:e5f6b810-8228-431f-86c0-364af872fe9d,profession:e5f6b810-8228-431f-86c0-364af872fe9d,isauthor:e5f6b810-8228-431f-86c0-364af872fe9d,authorbio:e5f6b810-8228-431f-86c0-364af872fe9d]"/>
+                </new_author>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

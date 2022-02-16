@@ -12,6 +12,7 @@
         jcr:mixinTypes="[cq:LiveSync]"
         jcr:primaryType="cq:PageContent"
         jcr:title="India"
+
         sling:configRef="/conf/personalproject/in"
         sling:resourceType="foundation/components/redirect">
         <cq:LiveSyncConfig
