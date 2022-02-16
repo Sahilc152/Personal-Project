@@ -1,0 +1,27 @@
+{
+  "price":
+  {
+    "jcr:primaryType":"nt:unstructured",
+    "jcr:createdBy":"admin",
+    "jcr:lastModifiedBy":"admin",
+    "number":"01",
+    "jcr:created":"Wed Sep 08 2021 18:35:29 GMT+0530",
+    "tag1":"Secure Online Transfer",
+    "tag2":"Unlimited Styles for interface",
+    "tag3":"Reliable Customer Service",
+    "title":"Economy",
+    "heading":"For the individuals",
+    "jcr:lastModified":"Wed Sep 08 2021 18:42:58 GMT+0530",
+    "sling:resourceType":"personalproject/components/content/price",
+    "cq:responsive":
+      {
+        "jcr:primaryType":"nt:unstructured",
+        "default":
+          {
+            "jcr:primaryType":"nt:unstructured",
+            "offset":"NaN",
+            "width":"NaN"
+          }
+      }
+  }
+}

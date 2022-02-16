@@ -2,7 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+
         cq:lastModified="{Date}2021-11-26T16:05:38.051+05:30"
+
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2021-09-16T18:08:58.488+05:30"
         cq:lastReplicatedBy="admin"
@@ -93,6 +95,7 @@
                                 title="2003-06"/>
                         </timelinedetailswithmap>
                     </timeline>
+
                     <price
                         jcr:created="{Date}2021-09-08T18:35:29.368+05:30"
                         jcr:createdBy="admin"
