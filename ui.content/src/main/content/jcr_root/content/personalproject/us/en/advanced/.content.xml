@@ -3,6 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:lastModified="{Date}2021-12-11T19:09:21.419+05:30"
+
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2021-09-16T18:08:58.488+05:30"
         cq:lastReplicatedBy="admin"
@@ -34,6 +35,7 @@
                         img="/content/dam/personalproject/about-img.png"
                         intro="Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
                         mybutton="View full details"
+
                         path="/content/personalproject/us/en/about">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
@@ -42,6 +44,7 @@
                                 width="9"/>
                         </cq:responsive>
                     </homeabout>
+
                     <testimonial
                         jcr:created="{Date}2021-09-08T16:38:28.808+05:30"
                         jcr:createdBy="admin"
@@ -100,6 +103,7 @@
                                 title="2003-06"/>
                         </timelinedetailswithmap>
                     </timeline>
+
                     <price
                         jcr:created="{Date}2021-09-08T18:35:29.368+05:30"
                         jcr:createdBy="admin"
@@ -116,8 +120,10 @@
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"
+
                                 offset="0"
                                 width="4"/>
+
                         </cq:responsive>
                     </price>
                     <formaddition
@@ -127,12 +133,14 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="personalproject/components/content/formaddition"/>
+
                     <serviceusers
                         jcr:created="{Date}2021-12-02T18:00:53.452+05:30"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2021-12-02T18:00:53.452+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
+
                         sling:resourceType="personalproject/components/content/serviceusers">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
@@ -167,6 +175,7 @@
                         pretitle="This a Custom Teaser"
                         textIsRich="true"
                         titleFromPage="false"/>
+
                 </container>
             </container>
         </root>
