@@ -1,12 +1,10 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.personalproject.core.models.HomeBanner;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @Model(adaptables = SlingHttpServletRequest.class,
         adapters = HomeBanner.class,
@@ -14,8 +12,6 @@ import org.slf4j.LoggerFactory;
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
 public class HomeBannerImpl implements HomeBanner {
-    private static final Logger LOG = LoggerFactory.getLogger(HomeBannerImpl.class);
-    //final protected static String RESOURCE_TYPE="personalproject/components/content/homebanner";
 
     @ValueMapValue
     private String bio;

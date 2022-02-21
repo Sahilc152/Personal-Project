@@ -1,4 +1,4 @@
-package com.personalproject.core.services.Impl;
+package com.personalproject.core.services.impl;
 
 import com.personalproject.core.services.OSGiConfig;
 import org.osgi.service.component.annotations.Activate;
@@ -52,8 +52,12 @@ public class OSGiConfigImpl implements OSGiConfig{
         String getRunMode() default "both";
     }
 
-    private String serviceName; private int serviceCount; private boolean liveData; private String[] countries; private String runModes;
-    @Activate protected void activate(ServiceConfig serviceConfig){
+    private String serviceName;
+    private int serviceCount;
+    private boolean liveData;
+    private String[] countries;
+    private String runModes;
+    @Activate public void activate(ServiceConfig serviceConfig){
         serviceName=serviceConfig.serviceName(); serviceCount=serviceConfig.getServiceCount(); liveData=serviceConfig.getLiveData(); countries=serviceConfig.getCountries(); runModes=serviceConfig.getRunMode(); }
 
     @Override public String getServiceName() {

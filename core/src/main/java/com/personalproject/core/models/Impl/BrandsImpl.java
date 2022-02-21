@@ -1,12 +1,11 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.personalproject.core.models.Brands;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,8 +17,6 @@ import java.util.List;
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
 public class BrandsImpl implements Brands {
-    private static final Logger LOG = LoggerFactory.getLogger(BrandsImpl.class);
-    //final protected static String RESOURCE_TYPE="personalproject/components/content/brands";
 
     @ValueMapValue
     List<String> path;
@@ -27,7 +24,7 @@ public class BrandsImpl implements Brands {
     @Override
     public List<String> getPath() {
         if(path!=null){
-            return new ArrayList<String>(path);
+            return new ArrayList<>(path);
         }else{
             return Collections.emptyList();
         }

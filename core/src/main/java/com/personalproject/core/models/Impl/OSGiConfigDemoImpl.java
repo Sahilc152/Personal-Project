@@ -1,4 +1,4 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.personalproject.core.models.OSGiConfigDemo;
 import com.personalproject.core.services.OSGiConfig;

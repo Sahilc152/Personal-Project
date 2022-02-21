@@ -1,4 +1,4 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.personalproject.core.models.HomeAbout;
@@ -7,8 +7,7 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 @Model(adaptables = SlingHttpServletRequest.class,
         adapters = HomeAbout.class,
@@ -17,8 +16,7 @@ import org.slf4j.LoggerFactory;
 )
 @Exporter(name = "jackson",extensions = "json",selector ="personal")
 public class HomeAboutImpl implements HomeAbout {
-    private static final Logger LOG = LoggerFactory.getLogger(HomeAboutImpl.class);
-    final protected static String RESOURCE_TYPE="personalproject/components/content/homeabout";
+    protected static final String RESOURCE_TYPE="personalproject/components/content/homeabout";
 
     @ValueMapValue
     private String about;

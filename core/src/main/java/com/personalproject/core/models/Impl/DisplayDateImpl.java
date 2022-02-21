@@ -1,4 +1,4 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.day.cq.commons.date.DateUtil;
 import com.personalproject.core.config.SchedulerConfiguration;

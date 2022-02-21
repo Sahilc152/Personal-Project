@@ -1,4 +1,4 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.day.cq.search.PredicateGroup;
 import com.day.cq.search.Query;
@@ -55,12 +55,13 @@ public class ServiceUsersImpl implements ServiceUsers {
         userMap.put("p.hits", "selective");
         userMap.put("p.limit", "-1");
         userMap.put("property", "jcr:primaryType");
-        userMap.put("property.value", "rep:User");
-        userMap.put("path", "/home/users");
+        userMap.put("property.value", "rep:SystemUser");
+        userMap.put("path", "/home/users/system/personalproject");
         userMap.put("type", "rep:User");
         userMap.put("p.properties", "rep:principalName");
         try(ResourceResolver serviceResourceResolver = ResolverUtil.newResolver(resourceResolverFactory)){
 
+            LOG.info("\n Inside Try Block..");
             Session session = serviceResourceResolver.adaptTo(Session.class);
             Query userQuery = queryBuilder.createQuery(PredicateGroup.create(userMap), session);
             SearchResult result = userQuery.getResult();
