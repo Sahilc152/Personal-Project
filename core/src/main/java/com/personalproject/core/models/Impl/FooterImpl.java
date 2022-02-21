@@ -1,12 +1,10 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.personalproject.core.models.Footer;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @Model(adaptables = SlingHttpServletRequest.class,
         adapters = Footer.class,
@@ -14,8 +12,6 @@ import org.slf4j.LoggerFactory;
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
 public class FooterImpl implements Footer {
-    private static final Logger LOG = LoggerFactory.getLogger(FooterImpl.class);
-    //final protected static String RESOURCE_TYPE="personalproject/components/content/footer";
 
     @ValueMapValue
     private String title;

@@ -1,4 +1,4 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.personalproject.core.models.Testimonial;
@@ -25,7 +25,7 @@ import java.util.Map;
 @Exporter(name = "jackson",extensions = "json",selector ="personal")
 public class TestimonialImpl implements Testimonial {
     private static final Logger LOG = LoggerFactory.getLogger(TestimonialImpl.class);
-    final protected static String RESOURCE_TYPE="personalproject/components/content/testimonial";
+    protected static final String RESOURCE_TYPE="personalproject/components/content/testimonial";
 
     @ChildResource
     Resource testimonialdetailswithmap;
@@ -35,7 +35,7 @@ public class TestimonialImpl implements Testimonial {
     public List<Map<String, String>> getTestimonialDetails() {
         List<Map<String, String>> testimonialDetailsMap=new ArrayList<>();
         try {
-            //Resource testimonialDetail= testimonialdetailswithmap.getChild("testimonialdetailswithmap");
+
             if(testimonialdetailswithmap!=null){
                 for (Resource testimonial : testimonialdetailswithmap.getChildren()) {
                     Map<String,String> testimonialMap=new HashMap<>();

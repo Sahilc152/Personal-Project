@@ -1,12 +1,10 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.personalproject.core.models.PortfolioTeaser;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @Model(adaptables = SlingHttpServletRequest.class,
         adapters = PortfolioTeaser.class,
@@ -14,8 +12,6 @@ import org.slf4j.LoggerFactory;
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
 public class PortfolioTeaserImpl implements PortfolioTeaser {
-    private static final Logger LOG = LoggerFactory.getLogger(PortfolioTeaserImpl.class);
-    //final protected static String RESOURCE_TYPE="personalproject/components/content/portfolioteaser";
 
     @ValueMapValue
     private String img;

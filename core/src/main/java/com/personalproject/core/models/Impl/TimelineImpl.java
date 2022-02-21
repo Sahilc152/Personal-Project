@@ -1,4 +1,4 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.personalproject.core.models.Timeline;
@@ -25,7 +25,7 @@ import java.util.Map;
 @Exporter(name = "jackson",extensions = "json",selector ="personal")
 public class TimelineImpl implements Timeline {
     private static final Logger LOG = LoggerFactory.getLogger(TimelineImpl.class);
-    final protected static String RESOURCE_TYPE="personalproject/components/content/timeline";
+    protected static final String RESOURCE_TYPE="personalproject/components/content/timeline";
 
     @ChildResource
     Resource timelinedetailswithmap;
@@ -35,7 +35,6 @@ public class TimelineImpl implements Timeline {
     public List<Map<String, String>> getTimelineDetailsWithMap() {
         List<Map<String, String>> timelineDetailsMap=new ArrayList<>();
         try {
-            //Resource timelineDetail=timelinedetailswithmap.getChild("timelinedetailswithmap");
             if(timelinedetailswithmap!=null){
                 for (Resource timeline : timelinedetailswithmap.getChildren()) {
                     Map<String,String> timelineMap=new HashMap<>();

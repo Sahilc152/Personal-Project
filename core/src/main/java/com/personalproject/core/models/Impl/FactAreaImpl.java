@@ -1,4 +1,4 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.personalproject.core.models.FactArea;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -29,7 +29,6 @@ public class FactAreaImpl implements FactArea {
     public List<Map<String, String>> getFactDetailsWithMap() {
         List<Map<String, String>> factDetailsMap=new ArrayList<>();
         try {
-            //Resource factDetail= factdetailswithmap.getChild("factdetailswithmap");
             if(factdetailswithmap!=null){
                 for (Resource fact : factdetailswithmap.getChildren()) {
                     Map<String,String> factMap=new HashMap<>();

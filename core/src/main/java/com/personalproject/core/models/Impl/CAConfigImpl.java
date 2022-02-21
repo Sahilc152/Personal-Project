@@ -1,4 +1,4 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.day.cq.wcm.api.Page;
 import com.personalproject.core.config.PersonalCAConfig;
@@ -14,17 +14,16 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import javax.annotation.PostConstruct;
+
 @Model(adaptables = {SlingHttpServletRequest.class},
         adapters = {CAConfig.class},
         resourceType = {CAConfigImpl.RESOURCE_TYPE},
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 
 public class CAConfigImpl implements CAConfig {
-    private static final Logger LOG = LoggerFactory.getLogger(CAConfigImpl.class);
     protected static final String RESOURCE_TYPE = "personalproject/components/content/cards";
+
     @SlingObject
     ResourceResolver resourceResolver;
     @ScriptVariable
@@ -35,7 +34,7 @@ public class CAConfigImpl implements CAConfig {
     private String siteLocale;
     private String siteAdmin;
     private String siteSection;
-    private PersonalCAConfig personalCAConfig;
+
     @Override
     public String getSiteCountry() {
         return siteCountry;
@@ -59,10 +58,12 @@ public class CAConfigImpl implements CAConfig {
     @PostConstruct
     public void postConstruct() {
         PersonalCAConfig caConfig = getContextAwareConfig(currentPage.getPath(), resourceResolver);
-        siteCountry = caConfig.siteCountry();
-        siteLocale = caConfig.siteLocale();
-        siteAdmin = caConfig.siteAdmin();
-        siteSection = caConfig.siteSection();
+        if(caConfig != null) {
+            siteCountry = caConfig.siteCountry();
+            siteLocale = caConfig.siteLocale();
+            siteAdmin = caConfig.siteAdmin();
+            siteSection = caConfig.siteSection();
+        }
     }
 
     private PersonalCAConfig getContextAwareConfig(String currentPage, ResourceResolver resourceResolver) {

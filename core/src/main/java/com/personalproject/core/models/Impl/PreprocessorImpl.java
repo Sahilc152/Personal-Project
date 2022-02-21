@@ -1,4 +1,4 @@
-package com.personalproject.core.models.Impl;
+package com.personalproject.core.models.impl;
 
 import com.day.cq.commons.date.DateUtil;
 import com.day.cq.replication.*;
@@ -24,7 +24,7 @@ public class PreprocessorImpl implements Preprocessor {
     private ResourceResolverFactory resourceResolverFactory;
     @Reference
     DisplayDate displayDate;
-    String path1 = "/content/personalproject/us/en/scheduler-page/jcr:content/root/container/container/displaydate";
+
     @Override
     public void preprocess(ReplicationAction replicationAction, ReplicationOptions replicationOptions) throws ReplicationException {
         LOG.info("\nInside Method");
@@ -34,17 +34,16 @@ public class PreprocessorImpl implements Preprocessor {
         String path = replicationAction.getPath();
         if(path.equals("/content/personalproject/us/en/scheduler-page")){
             LOG.debug("\npath equal");
-            try {
-                ResourceResolver resourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
+            try (ResourceResolver resourceResolver = ResolverUtil.newResolver(resourceResolverFactory)){
                 Session session = resourceResolver.adaptTo(Session.class);
-                Resource resource = resourceResolver.getResource(path1);
+                Resource resource = resourceResolver.getResource("/content/personalproject/us/en/scheduler-page/jcr:content/root/container/container/displaydate");
                 Node node = resource.adaptTo(Node.class);
                 Property date = node.getProperty("NewTime");
                 if(date == DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance()))){
                     LOG.info("\nINSIDE IF");
                 }else{
                     LOG.info("\nINSIDE ELSE");
-                    displayDate.displayDate(path1);
+                    displayDate.displayDate("/content/personalproject/us/en/scheduler-page/jcr:content/root/container/container/displaydate");
                     session.save();
                     session.logout();
                 }
