@@ -1,0 +1,24 @@
+{
+  "homeAbout": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "mybutton": "View full details",
+    "jcr:created": "Thu Sep 16 2021 17:16:12 GMT+0530",
+    "img": "/content/dam/personalproject/about-img.png",
+    "path": "/content/personalproject/us/en/about",
+    "about": "About Me",
+    "intro": "Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    "jcr:lastModified": "Thu Sep 16 2021 17:17:19 GMT+0530",
+    "sling:resourceType": "personalproject/components/content/homeabout",
+    "details": "Personal Details",
+    "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "9"
+      }
+    }
+  }
+}
