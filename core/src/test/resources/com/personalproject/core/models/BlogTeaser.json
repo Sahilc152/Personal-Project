@@ -1,0 +1,21 @@
+{
+  "blogTeaser": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "description": "Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Wed Sep 08 2021 17:41:53 GMT+0530",
+    "img": "/content/dam/personalproject/b1.jpg",
+    "title": "BREAK THROUGH SELF DOUBT AND FEAR",
+    "jcr:lastModified": "Wed Sep 08 2021 18:09:16 GMT+0530",
+    "sling:resourceType": "personalproject/components/content/blogteaser",
+    "cq:responsive": {
+      "jcr:primaryType": "nt:unstructured",
+      "default": {
+        "jcr:primaryType": "nt:unstructured",
+        "offset": "0",
+        "width": "4"
+      }
+    }
+  }
+}

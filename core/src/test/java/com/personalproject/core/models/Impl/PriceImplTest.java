@@ -32,8 +32,7 @@ class PriceImplTest {
     void getHeading() {
         aemContext.currentResource("/component/price");
         Price price = aemContext.request().adaptTo(Price.class);
-
-        final String expected="Economy";
+        final String expected="For the individuals";
         String actual = price.getHeading();
         assertEquals(expected,actual);
     }
@@ -42,8 +41,7 @@ class PriceImplTest {
     void getTitle() {
         aemContext.currentResource("/component/price");
         Price price = aemContext.request().adaptTo(Price.class);
-
-        final String expected="For the individuals";
+        final String expected="Economy";
         String actual = price.getTitle();
         assertEquals(expected,actual);
     }
